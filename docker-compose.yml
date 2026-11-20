@@ -1,0 +1,13 @@
+# Lance Floci-GCP (émulateur Google Cloud). Floci UI est lancé séparément,
+# voir README.md.
+services:
+  floci-gcp:
+    image: floci/floci-gcp:latest
+    container_name: floci-gcp
+    ports:
+      - "4588:4588"
+    environment:
+      FLOCI_GCP_DEFAULT_PROJECT_ID: "floci-local"
+      FLOCI_GCP_STORAGE_MODE: "memory"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

@@ -1,0 +1,27 @@
+# Terraform
+# .terraform.lock.hcl est volontairement COMMIT (reproductibilité des versions
+# de provider) — voir https://developer.hashicorp.com/terraform/language/files/dependency-lock
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets éventuels
+*.auto.tfvars
+secrets.tfvars
+
+# Outillage local (binaire terraform.exe téléchargé pour dev, non versionné)
+.bin/
+
+# Scripts d'automatisation personnels, non demandés par le sujet
+scripts/
+
+# OS
+.DS_Store
+Thumbs.db
