@@ -336,7 +336,10 @@ Re-check Floci UI to verify that resources have been cleanly removed.
 
 ---
 
-## Author
+## Contributors
 
 - **Mouhamadou Aliou BA** ([@Alioukun221](https://github.com/Alioukun221))
+
+> **Academic Context:** This repository was designed and implemented as a hands-on class project for the **Cloud Computing & Infrastructure as Code** curriculum.
+
 
